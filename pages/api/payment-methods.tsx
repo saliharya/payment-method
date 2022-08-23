@@ -4,13 +4,13 @@ const paymentDatas = [
 		categoryName: 'Pembayaran via Tokopedia',
 		items: [
 			{
-				logo: '/pngwing.com.png',
+				logo: '/gopay.png',
 				title: '',
 				balance: 0,
 				point: 0
 			},
 			{
-				logo: '/pngwing.com.png',
+				logo: '/ovo.svg',
 				title: '',
 				balance: 112675,
 				point: 5000
@@ -22,28 +22,20 @@ const paymentDatas = [
 		categoryName: 'Debit Instan',
 		items: [
 			{
-				logo: '/pngwing.com.png',
+				logo: '/BRIDirectDebit.png',
 				title: 'Direct Debit BRI',
-				balance: 0,
-				point: 0
 			},
 			{
-				logo: '/pngwing.com.png',
+				logo: '/OneKlik.png',
 				title: 'OneKlik',
-				balance: 0,
-				point: 0
 			},
 			{
-				logo: '/pngwing.com.png',
+				logo: '/octo.svg',
 				title: 'OCTO CIMB Niaga',
-				balance: 0,
-				point: 0
 			},
 			{
-				logo: '/pngwing.com.png',
+				logo: '/debitMandiri.png',
 				title: 'Debit Mandiri',
-				balance: 0,
-				point: 0
 			},
 		]
 	},
@@ -52,10 +44,8 @@ const paymentDatas = [
 		categoryName: 'Kartu Kredit / Debit',
 		items: [
 			{
-				logo: '/pngwing.com.png',
+				logo: '/cc.svg',
 				title: 'Kartu Kredit / Debit',
-				balance: 0,
-				point: 0
 			},
 		]
 	},
