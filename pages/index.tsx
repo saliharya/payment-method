@@ -3,9 +3,7 @@ import Button from '../components/Button';
 
 const Home: NextPage = () => {
 	return (
-		<>
-			<Button></Button>
-		</>
+		<Button />
 	);
 };
 
