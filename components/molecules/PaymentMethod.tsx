@@ -3,7 +3,7 @@ import Image from 'next/image';
 interface itemProps {
 	category : string
 	name?: string
-	image?: string;
+	image: string;
 	balance?: number;
 	point?: number
 }
