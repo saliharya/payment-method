@@ -1,49 +1,32 @@
 import Image from 'next/image';
 
 interface itemProps {
-	category : string
-	name?: string
-	image: string;
-	balance?: number;
-	point?: number
+	title?:string;
+	balance?:number;
+	points?:number;
+	logo:string;
 }
 
-export default function PaymentMethodItems(props: itemProps) {
+export default function PaymentMethod(props: itemProps) {
 
-	const { category, name, image, balance, point } = props;
-
-	if (category == 'Pembayaran via Tokopedia') {
-		return (
-			<>
-				<div className="font-bold">
-					<p>{category}</p>
-				</div>
-				<div className="flex items-center">
-					<div className="p-3">
-						<Image src={image} width={40} height={40}></Image>
-					</div>
-					<div className="font-medium">
-						<p>Rp {balance}</p>
-						<p>Points {point}</p>
-					</div>
-				</div>
-			</>
-		);
-	}
+	const { title, balance, points, logo } = props;
 
 	return (
 		<>
-			<div className="font-bold">
-				<p>{category}</p>
-			</div>
 			<div className="flex items-center">
 				<div className="p-3">
-					<Image src={image} width={40} height={40}></Image>
+					<Image src={logo} width={40} height={40}></Image>
 				</div>
 				<div className="font-medium">
-					<p>{name}</p>
+					{balance?<p>Rp {balance}</p> : null}
+					{title ? <p>{title}</p> : null}
+					{points ? <p>Points {points}</p> : null}
 				</div>
 			</div>
 		</>
 	);
 }
+
+{/* <p>{title}</p>
+<p>Rp {balance}</p>
+<p>Points {points}</p> */}
